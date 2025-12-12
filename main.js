@@ -11,10 +11,10 @@ function curriedAdd(a) {
 }
 
 // Приклад використання
-// const addFirst = curriedAdd(1);
-// const addSecond = addFirst(2);
-// const result = addSecond(3);
-// console.log("Result:", result);
+const addFirst = curriedAdd(1);
+const addSecond = addFirst(2);
+const result = addSecond(3);
+console.log("Result:", result);
 
 export { curriedAdd };
 
@@ -31,10 +31,10 @@ function curriedDomain(protocol) {
 }
 
 // Приклад використання
-// const protocolSetter = curriedDomain("https");
-// const domainNameSetter = protocolSetter("example");
-// const fullDomain = domainNameSetter("com");
-// console.log("Full Domain:", fullDomain);
+const protocolSetter = curriedDomain("https");
+const domainNameSetter = protocolSetter("example");
+const fullDomain = domainNameSetter("com");
+console.log("Full Domain:", fullDomain);
 
 export { curriedDomain };
 
@@ -53,9 +53,9 @@ function modifyFunction(originalFunc, multiplier) {
 }
 
 // Приклад використання
-// const modifiedFunc = modifyFunction(originalFunction, 3);
-// console.log("Original function output for 4:", originalFunction(4));
-// console.log("Modified function output for 4:", modifiedFunc(4));
+const modifiedFunc = modifyFunction(originalFunction, 3);
+console.log("Original function output for 4:", originalFunction(4));
+console.log("Modified function output for 4:", modifiedFunc(4));
 
 export { originalFunction, modifyFunction };
 
@@ -74,7 +74,7 @@ function outerFunction(arg1) {
 }
 
 // Приклад використання
-// const multiplyResult = outerFunction(2)(3)(4);
-// console.log(multiplyResult);
+const multiplyResult = outerFunction(2)(3)(4);
+console.log(multiplyResult);
 
 export { outerFunction };
