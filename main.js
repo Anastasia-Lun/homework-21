@@ -16,7 +16,7 @@ const addSecond = addFirst(2);
 const result = addSecond(3);
 console.log("Result:", result);
 
-export { curriedAdd };
+// export { curriedAdd };
 
 /*
  ! Завдання: Реалізація Функції з Каруванням для Побудови Повного Доменного Імені
